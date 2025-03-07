@@ -1,0 +1,41 @@
+/* .letterU {
+  width: 40px;
+} */
+.add {
+  width: 70%;
+  margin-left: max(5vw, 25px);
+  margin-top: 50px;
+  font-size: 16px;
+}
+.add form {
+  gap: 20px;
+}
+.add-image-upload img {
+  width: 120px;
+}
+.add-product-name,
+.add-product-description {
+  width: max(40%, 280px);
+}
+.add-product-name input,
+.add-product-description textarea {
+  padding: 10px;
+}
+.add-category-price {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.add-category-price select,
+.add-category-price input {
+  max-width: 120px;
+  padding: 10px;
+}
+.add-btn {
+  max-width: 130px;
+  background-color: orange;
+  color: #000;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}

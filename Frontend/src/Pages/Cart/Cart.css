@@ -1,0 +1,119 @@
+.cart {
+  margin-top: 100px;
+}
+.cart-item-head {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+}
+.cart-item hr {
+  background-color: #e2e2e2;
+  border: none;
+  height: 2px;
+}
+.cart-list {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  margin: 10px 0;
+  align-items: center;
+}
+.cart-list-items img {
+  width: 60px;
+  height: 60px;
+}
+.cart-list-items button {
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  background: transparent;
+}
+.cart-list-items hr {
+  background-color: #e2e2e2;
+  border: none;
+  height: 1px;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.total button {
+  padding: 20px 30px;
+  border: none;
+  font-size: 1.2rem;
+  background-color: black;
+  cursor: pointer;
+  color: #fff;
+}
+
+.cart-sub-total {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.sub-total-detail,
+.cart-delivery {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-items-total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-promo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.prome-code-input {
+  display: flex;
+}
+.prome-code-input input {
+  padding: 10px;
+  border: none;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+.prome-code-input button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 12px 5px;
+  width: max(10vw, 150px);
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .cart-list-items .cart-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cart-item-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .cart-item-head p {
+    font-size: 0.7rem;
+  }
+  .cart-list-items p {
+    font-size: 0.8rem;
+  }
+
+  .cart-list-items .price {
+    display: block;
+  }
+  .cart-total .total {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .prome-code-input input,
+  button {
+    padding: 4px;
+    border: none;
+  }
+}

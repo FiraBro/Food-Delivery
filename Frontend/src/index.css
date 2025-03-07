@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: outfit;
+}
+.active {
+  /* background-color: orange; */
+  border-bottom: 1ps solid orange;
+}
+ 
+/* Ensure particles stay in the background */
+#tsparticles {
+  position: fixed; /* Use fixed to cover the entire screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it stays behind other content */
+}
+
+/* Ensure your content stays on top */
+.layout {
+  position: relative;
+  z-index: 1;
+  padding: 0 10px;
+}

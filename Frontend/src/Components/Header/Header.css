@@ -1,0 +1,42 @@
+.header {
+  background-image: url(/back-food.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 34vw;
+  margin: 30px auto;
+  position: relative;
+}
+.header_content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  width: 60%;
+  animation: FadeIn 3s;
+}
+.header_content h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+.header_content p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .header_content h2 {
+    display: none;
+  }
+}
