@@ -1,1 +1,1 @@
-This an exciting project than so give it a good rate 
+This an exciting project so give it a good rate 
